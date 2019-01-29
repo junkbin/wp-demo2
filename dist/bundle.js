@@ -192,11 +192,11 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! exports provided: default, addNewBlock */
+/*! exports provided: default, addNewBlock, addNewBlockUsingJQuery */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ \"./node_modules/bootstrap/dist/css/bootstrap.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main */ \"./src/main.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _main__WEBPACK_IMPORTED_MODULE_2__[\"default\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"addNewBlock\", function() { return _main__WEBPACK_IMPORTED_MODULE_2__[\"addNewBlock\"]; });\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://mylib/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ \"./node_modules/bootstrap/dist/css/bootstrap.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main */ \"./src/main.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _main__WEBPACK_IMPORTED_MODULE_2__[\"default\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"addNewBlock\", function() { return _main__WEBPACK_IMPORTED_MODULE_2__[\"addNewBlock\"]; });\n\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"addNewBlockUsingJQuery\", function() { return _main__WEBPACK_IMPORTED_MODULE_2__[\"addNewBlockUsingJQuery\"]; });\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://mylib/./src/index.js?");
 
 /***/ }),
 
@@ -204,11 +204,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var boot
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-/*! exports provided: addNewBlock */
+/*! exports provided: addNewBlock, addNewBlockUsingJQuery */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"addNewBlock\", function() { return addNewBlock; });\n\nfunction addNewBlock() {\n    console.log(\"Add New Block\", document);\n\n    let parent = document.querySelector(\".container-fluid\");\n    let ref = parent.children[0];\n    let newChild = ref.cloneNode(true);\n\n    parent.appendChild(newChild);\n}\n\n\n\n//# sourceURL=webpack://mylib/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"addNewBlock\", function() { return addNewBlock; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"addNewBlockUsingJQuery\", function() { return addNewBlockUsingJQuery; });\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction addNewBlock() {\n    console.log(\"Add New Block\", document);\n\n    let parent = document.querySelector(\".container-fluid\");\n    let ref = parent.children[0];\n    let newChild = ref.cloneNode(true);\n\n    parent.appendChild(newChild);\n}\n\n\nfunction addNewBlockUsingJQuery() {\n    console.log(jquery__WEBPACK_IMPORTED_MODULE_0__);\n}\n\n\n\n//# sourceURL=webpack://mylib/./src/main.js?");
 
 /***/ })
 

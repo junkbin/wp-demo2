@@ -1,3 +1,4 @@
+import * as $ from 'jquery';
 
 function addNewBlock() {
     console.log("Add New Block", document);
@@ -9,4 +10,9 @@ function addNewBlock() {
     parent.appendChild(newChild);
 }
 
-export {addNewBlock}
+
+function addNewBlockUsingJQuery() {
+    console.log($);
+}
+
+export {addNewBlock, addNewBlockUsingJQuery}
