@@ -12,7 +12,9 @@ function addNewBlock() {
 
 
 function addNewBlockUsingJQuery() {
-    console.log($);
+    
+    $("#ref").clone().removeAttr("id").appendTo($("#parent"));
+    $("#parent").append($("#ref").clone().removeAttr("id"));
 }
 
 export {addNewBlock, addNewBlockUsingJQuery}
