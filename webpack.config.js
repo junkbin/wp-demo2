@@ -3,7 +3,7 @@ var webpack = require("webpack");
 
 module.exports = {
     "entry" : "./src/index.js",
-    "mode" : 'development',
+    // "mode" : 'development',
 
     "output" : {
         path : path.resolve(__dirname, 'dist'),
