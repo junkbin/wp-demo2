@@ -1,6 +1,6 @@
 import * as $ from 'jquery';
 
-function addNewBlock() {
+function addNewBlock1() {
     console.log("Add New Block", document);
 
     let parent = document.querySelector(".container-fluid");
@@ -11,7 +11,7 @@ function addNewBlock() {
 }
 
 
-function addNewBlockUsingJQuery() {
+function addNewBlockUsingJQuery1() {
     
     $("#ref").clone().removeAttr("id").appendTo($("#parent"));
     $("#parent").append($("#ref").clone().removeAttr("id"));
