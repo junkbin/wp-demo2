@@ -1,7 +1,7 @@
 import * as $ from 'jquery';
 
 function addNewBlock() {
-    // console.log("Add New Block", document);
+    console.log("Add New Block", document);
 
     let parent = document.querySelector(".container-fluid");
     let ref = parent.children[0];
